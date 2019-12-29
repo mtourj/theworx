@@ -1,0 +1,43 @@
+.navbar {
+  position: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0));
+  height: 72px;
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  user-select: none;
+;
+
+  .logo {
+    margin: 32px;
+    font-weight: bold;
+    font-size: 24px;
+
+    // Remove default react
+    // router Link styles
+    text-decoration: none;
+    color: white;
+  }
+
+  .links {
+    margin: 32px;
+
+    a {
+      margin: 8px;
+      text-decoration-color: rgba(0, 0, 0, 0);
+      color: white;
+
+      font-size: 18px;
+
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        text-decoration-color: white;
+      }
+    }
+  }
+}
